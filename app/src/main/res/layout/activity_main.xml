@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joseantonio.ut1_act2_recordatorio.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/txtView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/txtView2"
+            android:layout_marginTop="69dp"
+            android:elevation="1dp"
+            android:text="Nombre:"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.048"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.176" />
+
+        <EditText
+            android:id="@+id/ediTxt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtView1"
+            android:layout_alignBottom="@+id/txtView1"
+            android:layout_toEndOf="@+id/txtView2"
+            android:layout_toRightOf="@+id/txtView2"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="72dp" />
+
+        <TextView
+            android:id="@+id/txtView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ediTxt2"
+            android:layout_alignBottom="@+id/ediTxt2"
+            android:layout_toLeftOf="@+id/button1"
+            android:layout_toStartOf="@+id/button1"
+            android:text="Fecha Nacimiento:"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="153dp" />
+
+        <EditText
+            android:id="@+id/ediTxt2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:ems="10"
+            android:inputType="date"
+            tools:layout_editor_absoluteX="142dp"
+            tools:layout_editor_absoluteY="138dp"
+            android:layout_below="@+id/ediTxt1"
+            android:layout_toRightOf="@+id/txtView2"
+            android:layout_toEndOf="@+id/txtView2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:maxLength="8"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/ediTxt1"
+            android:layout_alignRight="@+id/ediTxt1"
+            android:layout_alignTop="@+id/ediTxt2"
+            app:srcCompat="@android:drawable/ic_menu_today"
+            tools:layout_editor_absoluteX="176dp"
+            tools:layout_editor_absoluteY="176dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="33dp"
+            android:text="Crear Recordatorio"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="219dp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="53dp"
+            android:onClick="onClick"
+            android:text="Aceptar"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="301dp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
